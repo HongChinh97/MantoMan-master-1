@@ -58,8 +58,19 @@ class AgeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         return "\(arrAge[row]) tuổi"
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        self.pickerView(self.myPickerView, didSelectRow: 2, inComponent: 0)
+//        self.myPickerView.selectRow(2, inComponent: 0, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "Push") as! RegistrationStatusViewController
+//        self.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
+
+    }
+    
     @IBAction func clickBackGender(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
     }
-
+    
 }

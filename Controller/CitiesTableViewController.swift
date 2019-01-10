@@ -9,13 +9,16 @@
 import UIKit
 
 class CitiesTableViewController: UITableViewController {
+    
+    var window: UIWindow?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GetDataFromPlist.sharedInstant.loadData { [unowned self] in
             self.tableView.reloadData()
         }
-        tableView.backgroundColor = UIColor.lightGray
+        tableView.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.9215686275, blue: 0.8039215686, alpha: 1)
         tableView.rowHeight = 90
         tableView.separatorStyle = .none
         let heightForHeaderView : CGFloat = 200
@@ -63,7 +66,12 @@ class CitiesTableViewController: UITableViewController {
     }
 
     @IBAction func clickBackStart(_ sender: UIBarButtonItem) {
+        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+        let result = mainSB.instantiateViewController(withIdentifier: "Start") as! StartViewController
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = result
+        window?.makeKeyAndVisible()
 //        navigationController?.popViewController(animated: true)
-        navigationController?.popToRootViewController(animated: true)
+//        navigationController?.popToRootViewController(animated: true)
     }
 }

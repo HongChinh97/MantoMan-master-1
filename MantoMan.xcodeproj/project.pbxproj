@@ -21,6 +21,8 @@
 		57CA609521E49EF2003CCF83 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA609421E49EF2003CCF83 /* StartViewController.swift */; };
 		57CA609721E4A06F003CCF83 /* plistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA609621E4A06F003CCF83 /* plistService.swift */; };
 		57CA609921E4A421003CCF83 /* DistrictsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA609821E4A421003CCF83 /* DistrictsTableViewController.swift */; };
+		843C151D21E6D88B00871F2B /* RegistrationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C151C21E6D88B00871F2B /* RegistrationStatusViewController.swift */; };
+		843C152021E6DEB200871F2B /* RegistrationStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C151F21E6DEB200871F2B /* RegistrationStatusTableViewCell.swift */; };
 		8475041421E5DF4C000FAB0F /* GenderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475041321E5DF4C000FAB0F /* GenderTableViewController.swift */; };
 		8475041621E5EB18000FAB0F /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475041521E5EB18000FAB0F /* AgeViewController.swift */; };
 		8475041B21E5F6AB000FAB0F /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475041A21E5F6AB000FAB0F /* PickerView.swift */; };
@@ -44,6 +46,8 @@
 		57CA609421E49EF2003CCF83 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		57CA609621E4A06F003CCF83 /* plistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plistService.swift; sourceTree = "<group>"; };
 		57CA609821E4A421003CCF83 /* DistrictsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictsTableViewController.swift; sourceTree = "<group>"; };
+		843C151C21E6D88B00871F2B /* RegistrationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewController.swift; sourceTree = "<group>"; };
+		843C151F21E6DEB200871F2B /* RegistrationStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusTableViewCell.swift; sourceTree = "<group>"; };
 		8475041321E5DF4C000FAB0F /* GenderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderTableViewController.swift; sourceTree = "<group>"; };
 		8475041521E5EB18000FAB0F /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		8475041A21E5F6AB000FAB0F /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
@@ -122,8 +126,18 @@
 				57CA609821E4A421003CCF83 /* DistrictsTableViewController.swift */,
 				8475041321E5DF4C000FAB0F /* GenderTableViewController.swift */,
 				8475041721E5F5FA000FAB0F /* Age */,
+				843C151E21E6DE7C00871F2B /* RegistrationStatus */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		843C151E21E6DE7C00871F2B /* RegistrationStatus */ = {
+			isa = PBXGroup;
+			children = (
+				843C151C21E6D88B00871F2B /* RegistrationStatusViewController.swift */,
+				843C151F21E6DEB200871F2B /* RegistrationStatusTableViewCell.swift */,
+			);
+			path = RegistrationStatus;
 			sourceTree = "<group>";
 		};
 		8475041721E5F5FA000FAB0F /* Age */ = {
@@ -209,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CA607021E4809E003CCF83 /* AppDelegate.swift in Sources */,
+				843C151D21E6D88B00871F2B /* RegistrationStatusViewController.swift in Sources */,
+				843C152021E6DEB200871F2B /* RegistrationStatusTableViewCell.swift in Sources */,
 				8475041421E5DF4C000FAB0F /* GenderTableViewController.swift in Sources */,
 				8475041621E5EB18000FAB0F /* AgeViewController.swift in Sources */,
 				57CA609521E49EF2003CCF83 /* StartViewController.swift in Sources */,

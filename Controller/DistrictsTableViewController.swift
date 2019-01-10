@@ -18,7 +18,7 @@ class DistrictsTableViewController: UITableViewController {
             return data.CityCode == cityCode
             
         })
-        tableView.backgroundColor = UIColor.lightGray
+        tableView.backgroundColor = #colorLiteral(red: 0.9921568627, green: 0.9215686275, blue: 0.8039215686, alpha: 1)
         tableView.rowHeight = 90
         tableView.separatorStyle = .none
         let heightForHeaderView : CGFloat = 200
@@ -58,6 +58,13 @@ class DistrictsTableViewController: UITableViewController {
     
     @IBAction func clickBack(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
+    }
+    @IBAction func clickNextGender(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "PushGender") as! GenderTableViewController
+        //        self.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
